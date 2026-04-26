@@ -6,7 +6,9 @@ name: Docker
 # documentation.
 
 on:
-  workflow_dispatch:
+  push:
+    branches: ["master"]
+    paths: ["docker", ".github/workflows/docker-publish.yml"]
 
 env:
   # Use docker.io for Docker Hub if empty
