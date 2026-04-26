@@ -1,3 +1,3 @@
-docker run -it --rm \
+docker run --rm \
     -v .:/root/armcc:rw \
-    armcc:latest
+    ghcr.io/akiramusic000/armcc:latest
